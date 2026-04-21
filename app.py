@@ -164,20 +164,20 @@ with st.sidebar:
         }
     )
 
-    # 👇 Add your signature block here
+    # Signature block
     st.markdown(
-            """
-            <div style="text-align:center; font-size:12px; margin-top:20px;">
-                By <a href="https://www.upwork.com/freelancers/~01c12fd1dd98e5960a" target="_blank" style="color:#2e7b7b; text-decoration:none;">
-                Humberto Hernandez
-                </a>
-            </div>
-            <div style="text-align:center; margin-top:10px;">
-                <img src="datamexlabs_bn.png" alt="DATAMEXLABS" style="width:120px;">
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+        """
+        <div style="text-align:center; font-size:12px; margin-top:20px;">
+            By <a href="https://www.upwork.com/freelancers/~01c12fd1dd98e5960a" target="_blank" style="color:#2e7b7b; text-decoration:none;">
+            Humberto Hernandez
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Company logo
+    st.image("datamexlabs_bn.png", use_column_width=False, width=120)
 
 main_topic = menu_options[selected]
 
