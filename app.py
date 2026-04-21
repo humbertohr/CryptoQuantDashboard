@@ -166,6 +166,7 @@ with st.sidebar:
 
     # Signature block
         # 👇 Add your signature and logo here
+        # Signature block
     st.markdown(
         """
         <div style="text-align:center; font-size:12px; margin-top:20px;">
@@ -173,12 +174,12 @@ with st.sidebar:
             Humberto Hernandez
             </a>
         </div>
-        <div style="text-align:center; margin-top:10px;">
-            <img src="datamexlabs_bn.png" alt="DATAMEXLABS" style="width:120px;">
-        </div>
         """,
         unsafe_allow_html=True
     )
+
+    # Company logo
+    st.image("datamexlabs_bn.png", use_column_width=False, width=120)
 
 main_topic = menu_options[selected]
 
