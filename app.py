@@ -175,6 +175,10 @@ tickers = ["BTC-USD", "ETH-USD", "XRP-USD", "BNB-USD"]
 def load_data():
     data = yf.download(tickers, start="2021-01-01", end="2025-12-31")["Close"]
     log_returns = np.log(data / data.shift(1)).dropna()
+
+    # Extra safeguard: drop columns with all NaN
+    log_returns = log_returns.dropna(how="all", axis=1)
+
     return data, log_returns
 
 data, log_returns = load_data()
@@ -304,6 +308,12 @@ if main_topic == "market":
 
         xmin = log_returns.min().min()
         xmax = log_returns.max().max()
+        
+        if np.isfinite(xmin) and np.isfinite(xmax):
+            ax.set_xlim(xmin, xmax)
+        else:
+            ax.set_xlim(-0.25, 0.25)  # sensible default
+
 
         # Define insights for each coin
         insights = {
