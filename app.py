@@ -177,9 +177,8 @@ with st.sidebar:
     )
 
     # Company logo
-    # Company logo at 60% size
-    st.markdown("<div style='text-align:center;'>", unsafe_allow_html=True)
-    st.image("datamexlabs_bn.png", width=120)  # adjust width until it looks ~60%
+    st.markdown("<div style='text-align:center; margin-top:5px;'>", unsafe_allow_html=True)
+    st.image("datamexlabs_bn.png", width=100)  # adjust width until it looks right
     st.markdown("</div>", unsafe_allow_html=True)
 
 main_topic = menu_options[selected]
