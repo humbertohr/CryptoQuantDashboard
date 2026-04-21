@@ -228,12 +228,6 @@ summary_table = pd.DataFrame({
     "CVaR (5%)": cvar_5
 })
 
-# ---------------------------
-# DISPLAY
-# ---------------------------
-st.subheader("Summary Table")
-st.dataframe(summary_table.style.format("{:.2%}"), use_container_width=True)
-
     # ---------------------------
     # MAIN PANEL
     # ---------------------------
