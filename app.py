@@ -177,7 +177,7 @@ with st.sidebar:
     )
 
     # Company logo
-    st.image("datamexlabs_bn.png", use_column_width=False, width=80)
+    st.image("datamexlabs_bn.png", width=80)
 
 main_topic = menu_options[selected]
 
