@@ -31,7 +31,7 @@ It provides traders, analysts, and researchers with an interactive interface to 
 
 Below is a preview of the dashboard interface:
 
-![Crypto Quant Dashboard Screenshot](screenshot_qcd_PNG)
+![Crypto Quant Dashboard Screenshot](screenshot_qcd_PNG.png)
 
 ---
 
